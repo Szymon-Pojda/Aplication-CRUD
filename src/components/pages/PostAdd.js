@@ -1,7 +1,7 @@
-import PageTitle from "../common/PageTitle/PageTitle";
+
 
 const PostAdd = () => {
-    return <PageTitle>Post Add</PageTitle>
+    return <h1> Add Post</h1>
 };
 
 export default PostAdd;

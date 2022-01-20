@@ -1,7 +1,6 @@
-import PageTitle from "../common/PageTitle/PageTitle";
 
-const NotFoundPage = () => {
-    return <PageTitle> 404 Not found </PageTitle>
+const NotFound = () => {
+    return <h1> 404 Not found </h1>
 };
 
-export default NotFoundPage
+export default NotFound

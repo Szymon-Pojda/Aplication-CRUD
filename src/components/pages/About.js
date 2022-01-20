@@ -1,7 +1,6 @@
-import PageTitle from "../common/PageTitle/PageTitle";
 
 const About = () => {
-    return <PageTitle>About</PageTitle>
+    return <h1>About</h1>
 };
 
 export default About;

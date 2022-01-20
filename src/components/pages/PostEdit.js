@@ -1,7 +1,6 @@
-import PageTitle from "../common/PageTitle/PageTitle";
 
 const PostEdit = () => {
-    return <PageTitle>Post Edit</PageTitle>
+    return <h1> Edit Post</h1>
 };
 
 export default PostEdit;
