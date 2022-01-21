@@ -4,7 +4,7 @@ const NavBar = () => {
         <Navbar bg='primary' variant='dark' expand='lg' className='mt-4 mb-4 rounded me-auto'
         >
             <Container>
-                <Navbar.Brand as={NavLink} to='/home'> BlogApp </Navbar.Brand>
+                <Navbar.Brand as={NavLink} to='/'> BlogApp </Navbar.Brand>
                 <Nav className='justify-content-end'>
                     <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
                     <Nav.Link as={NavLink} to='/about'>About</Nav.Link>
