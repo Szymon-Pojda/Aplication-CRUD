@@ -1,13 +1,13 @@
 import { Button } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { Navigate, useParams } from "react-router-dom";
-import { getSinglePosts } from "../../redux/postRedux";
+import { getSinglePost } from "../../redux/postRedux";
 import ShowModal from "../common/ShowModal";
 import Post from "../features/Post";
 
 const SinglePost = () => {
     const { id } = useParams ();
-    const post = useSelector((state) => getSinglePosts (state,id)).shift();
+    const post = useSelector((state) => getSinglePost (state,id)).shift();
     if (!id) return <Navigate to='/' />;
     if (!post) return <Navigate to='/' />;
 
