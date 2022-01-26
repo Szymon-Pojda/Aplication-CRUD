@@ -1,4 +1,5 @@
 import { Button, Card } from "react-bootstrap"
+import { NavLink } from "react-router-dom";
 
 const Post = ({ ...post }) => {
     return (
@@ -12,7 +13,7 @@ const Post = ({ ...post }) => {
                     <b>Published:</b> {post.publishedDate}
                 </p>
                 <Card.Text>{post.shortDescription}</Card.Text>
-                <Button href={'/post/${post.id}'}>Read More</Button>
+                <Button as={NavLink} to={'/post/${post.id}'}>Read More</Button>
             </Card.Body>
         </Card>
     );

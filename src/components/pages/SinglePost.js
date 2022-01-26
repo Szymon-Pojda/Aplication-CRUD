@@ -4,10 +4,11 @@ import { Navigate, useParams } from "react-router-dom";
 import { getSinglePost } from "../../redux/postRedux";
 import ShowModal from "../common/ShowModal";
 import Post from "../features/Post";
+import { NavLink } from "react-router-dom";
 
 const SinglePost = () => {
-    const { id } = useParams ();
-    const post = useSelector((state) => getSinglePost (state,id)).shift();
+    const { id } = useParams();
+    const post = useSelector((state) => getSinglePost(state, id)).shift();
     if (!id) return <Navigate to='/' />;
     if (!post) return <Navigate to='/' />;
 
@@ -20,7 +21,7 @@ const SinglePost = () => {
                     </div>
                 </div>
             </section>
-            <Button className='col-1 algin-self-start mx-1' variant='outline-success' href='/post/add'>
+            <Button as={NavLink} className='col-1 algin-self-start mx-1' variant='outline-success' to={`/post/edit/${post.id}`}>
                 Edit
             </Button>
 
