@@ -13,7 +13,7 @@ const Post = ({ ...post }) => {
                     <b>Published:</b> {post.publishedDate}
                 </p>
                 <Card.Text>{post.shortDescription}</Card.Text>
-                <Button as={NavLink} to={'/post/${post.id}'}>Read More</Button>
+                <Button  as={NavLink} to={`/post/${post.id}`}>Read More</Button>
             </Card.Body>
         </Card>
     );
